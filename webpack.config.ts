@@ -21,5 +21,5 @@ export default (env: BuildEnv) => {
         port
     })
 
-        return config
-    }
+    return config
+}
