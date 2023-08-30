@@ -19,12 +19,13 @@ return {
     },
     devtool: isDev ? 'inline-source-map' : undefined,
     devServer: isDev ? buildDevServer(options) : undefined,
-    plugins: buildPlugins(paths.html),
-    resolve: buildResolvers(),
+    plugins: buildPlugins(options),
+    resolve: buildResolvers(options),
     output: {
         path: paths.build,
         filename: '[name].[contenthash].js',
-        clean: true
+        clean: true,
+        assetModuleFilename: 'assets/[hash][ext][query]'
     },
 }
 }
