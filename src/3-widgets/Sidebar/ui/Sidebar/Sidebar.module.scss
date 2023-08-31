@@ -1,32 +1,28 @@
 .Sidebar {
-  position: relative;
-  width: var(--sidebar-width);
-  background: var(--inverted-bg-color);
-  height: calc(100vh - var(--navbar-height));
-  transition: width 0.5s;
+    position: relative;
+    width: var(--sidebar-width);
+    background: var(--inverted-bg-color);
+    height: calc(100vh - var(--navbar-height));
+    transition: width 0.5s;
 }
 
 .collapsed {
-  width:  var(--sidebar-width-collapsed);
-  //transition: width 1ms;
+    width: var(--sidebar-width-collapsed);
 }
 
 .open-close-icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--inverted-primary-color);
-  color: red;
-  stroke: red;
+    width: 40px;
+    height: 40px;
+    fill: var(--inverted-primary-color);
+    color: red;
+    stroke: red;
 }
 
-
-
 .switchers {
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }

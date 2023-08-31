@@ -5,22 +5,22 @@ import {routeConfig} from "6-shared/config/routeConfig/routeConfig";
 const AppRouter = () => {
     return (
         <div className="page-wrapper">
-        <Suspense fallback={<div>Loading...</div>}>
-            <Routes>
-                {Object.values(routeConfig).map(({path, element}) => (
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    {Object.values(routeConfig).map(({path, element}) => (
 
-                    <Route
-                        path={path}
-                        element={element}
-                        key={path}
-                    />
-                ))
-                }
-            </Routes>
-        </Suspense>
+                        <Route
+                            path={path}
+                            element={element}
+                            key={path}
+                        />
+                    ))
+                    }
+                </Routes>
+            </Suspense>
         </div>
     )
-        ;
+    ;
 };
 
 export default AppRouter;

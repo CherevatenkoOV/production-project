@@ -7,9 +7,8 @@ import Navbar from "3-widgets/Navbar/ui/Navbar";
 import {Sidebar} from "3-widgets/Sidebar";
 
 
-
 const App = () => {
-    const {theme, toggleTheme} = useTheme()
+    const {theme} = useTheme()
 
     return (
 

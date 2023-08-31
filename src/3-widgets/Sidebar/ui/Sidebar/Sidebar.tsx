@@ -18,14 +18,14 @@ const Sidebar = ({className}: SidebarProps) => {
         <div className={classNames(cls.Sidebar, {[cls.collapsed]: collapsed}, [className])}>
 
 
-           <button
-           onClick={onToggle}
-           >
-               TOGGLE
-           </button>
+            <button
+                onClick={onToggle}
+            >
+                TOGGLE
+            </button>
 
             <div className={cls.switchers}>
-                <ThemeSwitcher />
+                <ThemeSwitcher/>
                 <LangSwitcher/>
             </div>
 
