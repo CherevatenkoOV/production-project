@@ -4,7 +4,7 @@ import {BuildOptions} from "./types/config";
 
 export default function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     const svgLoader = {
-        test: /\.svg$/,
+        test: /\.svg$/i,
         use: ['@svgr/webpack'],
         // type: 'javascript/auto'
     }

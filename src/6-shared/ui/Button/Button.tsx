@@ -11,11 +11,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: VariantButton
 }
 
-const Button: FC<ButtonProps> = (props) => {
-    const {className,
+export const Button: FC<ButtonProps> = (props) => {
+    const {
+        className,
         children,
         variant,
-        ...otherProps} = props
+        ...otherProps
+    } = props
     return (
 
         <button
@@ -27,4 +29,3 @@ const Button: FC<ButtonProps> = (props) => {
     );
 };
 
-export default Button;
