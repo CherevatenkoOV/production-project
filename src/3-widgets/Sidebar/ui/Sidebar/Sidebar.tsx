@@ -3,7 +3,7 @@ import {classNames} from "6-shared/lib/classNames/classNames";
 import cls from './Sidebar.module.scss'
 import {ThemeSwitcher} from "3-widgets/ThemeSwitcher";
 import {LangSwitcher} from "3-widgets/LangSwitcher";
-import {Button} from "6-shared/ui/Button/Button";
+import {Button, VariantButton} from "6-shared/ui/Button/Button";
 
 
 interface SidebarProps {
@@ -21,6 +21,7 @@ const Sidebar = ({className}: SidebarProps) => {
             data-testid="sidebar"
         >
             <Button
+                variant={VariantButton.OUTLINE}
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
             >
