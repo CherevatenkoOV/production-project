@@ -26,6 +26,12 @@ Clear.args = {
     variant: VariantButton.CLEAR,
 };
 
+export const Red = Template.bind({});
+Red.args = {
+    children: 'Text',
+    variant: VariantButton.RED,
+};
+
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
