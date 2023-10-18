@@ -2,6 +2,7 @@
   "name": "project-singly",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "private": "true",
   "scripts": {
     "start": "webpack serve",
@@ -12,9 +13,9 @@
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
-    "test:ui": "loki test",
+    "test:ui": "npx loki test",
     "test:ui:ok": "loki approve",
-    "test:ui:ci": "build-storybook && loki --requireReference --reactUri file:./storybook-static",
+    "test:ui:ci": "loki --requireReference --reactUri file:./storybook-static",
     "storybook": "start-storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -c ./config/storybook"
   },
