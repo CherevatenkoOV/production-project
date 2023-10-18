@@ -20,5 +20,4 @@ describe('BUTTON', () => {
         const button = screen.getByRole('button')
         expect(button).toHaveClass("clear")
     })
-
 })
