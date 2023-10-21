@@ -1,16 +1,16 @@
 import {Sidebar} from "3-widgets/Sidebar";
 import {fireEvent, screen} from "@testing-library/react";
-import {renderWithTranslation} from "6-shared/lib/tests/renderWithTranslation/renderWithTranslation";
+import {componentRender} from "6-shared/lib/tests/componentRender/componentRender";
 
 describe('Sidebar', () => {
     test('Sidebar rendering', () => {
-        renderWithTranslation(<Sidebar/>)
+        componentRender(<Sidebar/>)
         const sidebar = screen.getByTestId("sidebar")
         expect(sidebar).toBeInTheDocument()
     })
 
     test('Sidebar collapsing', () => {
-        renderWithTranslation(<Sidebar/>)
+        componentRender(<Sidebar/>)
         const toggleButton = screen.getByTestId("sidebar-toggle");
         fireEvent.click(toggleButton)
         const sidebar = screen.getByTestId("sidebar");
