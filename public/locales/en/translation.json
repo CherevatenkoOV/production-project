@@ -1,7 +1,9 @@
 {
   "Test translation": "Test translation on english",
   "Language": "Language",
+  "Short language": "En",
   "About": "About",
   "Main": "Main",
-  "ERROR MAKER": "ERROR MAKER"
+  "ERROR MAKER": "ERROR MAKER",
+  "toggle": "Toggle"
 }

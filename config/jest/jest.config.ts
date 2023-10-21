@@ -46,8 +46,8 @@ export default {
         '\\.(css|scss)$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
 
-        // my
-        // '\\.svg$': '<rootDir>/config/jest/mocks/svg.ts',
+    // my
+    // '\\.svg$': '<rootDir>/config/jest/mocks/svg.ts',
     },
 
     // [custom!] for absolute paths in test files

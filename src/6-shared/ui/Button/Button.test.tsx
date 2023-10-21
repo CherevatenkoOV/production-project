@@ -1,8 +1,7 @@
-import {Button, VariantButton} from "./Button";
+import {Button, ButtonVariant} from "./Button";
 import {render, screen} from '@testing-library/react';
 
 describe('BUTTON', () => {
-
     test('button rendering', () => {
         render(<Button>TEST</Button>)
         const button = screen.getByRole('button')
@@ -16,7 +15,7 @@ describe('BUTTON', () => {
     })
 
     test('button has class .clear', () => {
-        render(<Button variant={VariantButton.CLEAR}>TEST</Button>)
+        render(<Button variant={ButtonVariant.CLEAR}>TEST</Button>)
         const button = screen.getByRole('button')
         expect(button).toHaveClass("clear")
     })

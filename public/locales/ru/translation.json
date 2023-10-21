@@ -1,7 +1,9 @@
 {
   "Test translation": "Тестовый перевод на русском",
   "Language": "Язык",
+  "Short language": "Ru",
   "About": "О нас",
   "Main": "Главная",
-  "ERROR MAKER": "ОШИБКО СОЗДАТЕЛЬ"
+  "ERROR MAKER": "ОШИБКО СОЗДАТЕЛЬ",
+  "toggle": "Переключить"
 }
