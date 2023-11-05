@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --env port=8080",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
@@ -60,6 +60,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-i18next": "^6.0.3",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.14",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",

@@ -1,5 +1,4 @@
-import React, {Suspense} from 'react';
-import "./styles/index.scss"
+import React, {Suspense, useState} from 'react';
 import {useTheme} from "./providers/ThemeProvider/lib/useTheme";
 import {classNames} from "6-shared/lib/classNames/classNames";
 import {AppRouter} from "1-app/providers/router";
@@ -9,6 +8,7 @@ import {Sidebar} from "3-widgets/Sidebar";
 
 const App = () => {
     const {theme} = useTheme()
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
 
